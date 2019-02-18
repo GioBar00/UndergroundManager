@@ -1,0 +1,13 @@
+C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\UI\bin\Debug\UI.exe.config
+C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\UI\bin\Debug\UI.exe
+C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\UI\bin\Debug\UI.pdb
+C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\UI\bin\Debug\ClassLibrary.dll
+C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\UI\bin\Debug\ClassLibrary.pdb
+C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\UI\obj\Debug\UI.csprojAssemblyReference.cache
+C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\UI\obj\Debug\UI.MainWindow.resources
+C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\UI\obj\Debug\UI.Properties.Resources.resources
+C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\UI\obj\Debug\UI.csproj.GenerateResource.cache
+C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
+C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\UI\obj\Debug\UI.csproj.CopyComplete
+C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\UI\obj\Debug\UI.exe
+C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\UI\obj\Debug\UI.pdb

@@ -1,0 +1,9 @@
+C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\ClassLibrary\bin\Debug\ClassLibrary.dll
+C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\ClassLibrary\bin\Debug\ClassLibrary.pdb
+C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\ClassLibrary\bin\Debug\MySql.Data.dll
+C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\ClassLibrary\bin\Debug\Google.Protobuf.dll
+C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\ClassLibrary\obj\Debug\ClassLibrary.csprojAssemblyReference.cache
+C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\ClassLibrary\obj\Debug\ClassLibrary.csproj.CopyComplete
+C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\ClassLibrary\obj\Debug\ClassLibrary.dll
+C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\ClassLibrary\obj\Debug\ClassLibrary.pdb
