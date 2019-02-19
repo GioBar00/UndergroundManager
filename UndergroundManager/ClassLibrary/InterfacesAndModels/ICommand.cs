@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-    internal class SQLServerManager
+    internal interface ICommand
     {
-        public SQLServerManager instance = new SQLServerManager();
-        private SQLServerManager() { }
-
-
+        void Do();
+        void Undo();
     }
 }

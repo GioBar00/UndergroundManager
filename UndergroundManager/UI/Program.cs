@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -8,6 +9,7 @@ namespace UI
 {
     static class Program
     {
+        static bool closeApplication = false;
         /// <summary>
         /// Punto di ingresso principale dell'applicazione.
         /// </summary>
@@ -16,8 +18,17 @@ namespace UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            var main = new MainWindow();
-            Application.Run(main);
+            FormManager.instance.OpenLogin();
+            while (!closeApplication)
+            {
+                Application.DoEvents();
+                Thread.Sleep(10);
+            }
+        }
+
+        public static void Form_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            closeApplication = true;
         }
     }
 }

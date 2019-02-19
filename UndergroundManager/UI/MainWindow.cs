@@ -16,8 +16,6 @@ namespace UI
         public MainWindow()
         {
             InitializeComponent();
-            
-            
         }
     }
 }

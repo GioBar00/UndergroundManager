@@ -11,3 +11,6 @@ C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundM
 C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\UI\obj\Debug\UI.csproj.CopyComplete
 C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\UI\obj\Debug\UI.exe
 C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\UI\obj\Debug\UI.pdb
+C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\UI\obj\Debug\UI.Login.resources
+C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\UI\bin\Debug\MySql.Data.dll
+C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\UI\bin\Debug\Google.Protobuf.dll

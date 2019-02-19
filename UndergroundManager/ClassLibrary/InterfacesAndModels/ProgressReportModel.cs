@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-    public class UndergroundManager
+    public class ProgressReportModel
     {
-        public static UndergroundManager instance = new UndergroundManager();
-        private UndergroundManager() { }
-
-
+        public int Percentuale { get; set; } = 0;
     }
 }
