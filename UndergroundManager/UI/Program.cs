@@ -26,7 +26,7 @@ namespace UI
             }
         }
 
-        public static void Form_FormClosed(object sender, FormClosedEventArgs e)
+        public static void Exit()
         {
             closeApplication = true;
         }

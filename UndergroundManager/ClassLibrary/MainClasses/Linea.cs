@@ -14,7 +14,7 @@ namespace ClassLibrary
         internal int coloreArgb;
         int idMetropolitana;
 
-        internal int ID
+        public int ID
         {
             get
             {
@@ -51,7 +51,8 @@ namespace ClassLibrary
             }
         }
 
-        internal Linea(int id, string nome, int idMetropolitana, int coloreArgb)
+        //TODO: Fix as Internal
+        public Linea(int id, string nome, int idMetropolitana, int coloreArgb)
         {
             this.id = id;
             this.nome = nome;

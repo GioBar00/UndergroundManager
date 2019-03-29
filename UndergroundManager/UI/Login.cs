@@ -17,6 +17,9 @@ namespace UI
         public Login()
         {
             InitializeComponent();
+            // TODO: remove after debug
+            textBoxPassword.Text = "UndergroundPassword";
+            textBoxUsername.Text = "underground";
         }
 
         private async void btnConnect_Click(object sender, EventArgs e)
@@ -26,11 +29,18 @@ namespace UI
             progress.ProgressChanged += updateProgressBarValue;
             try
             {
-                await SQLServerManager.instance.OpenConnectionAsync("localhost", textBoxUsername.Text, textBoxPassword.Text, progress);
+                SQLConnectionData data = new SQLConnectionData();
+                data.IP = UI.Properties.Settings.Default.ServerIP;
+                data.Port = UI.Properties.Settings.Default.ServerPort;
+                data.DatabaseName = UI.Properties.Settings.Default.ServerDatabaseName;
+                data.User = textBoxUsername.Text;
+                data.Password = textBoxPassword.Text;
+                await SQLServerManager.instance.OpenConnectionNewAsync(data, progress);
+                await Task.Delay(400);
+                FormManager.instance.OpenMainWindow();
             }
             catch (Exception ex)
             {
-                
                 MessageBox.Show("Errore nel collegamento al database.\n" + ex.Message, "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 EnableMod(true);
             }
@@ -52,7 +62,8 @@ namespace UI
 
         private void pictureBoxDatabaseImpostazioni_Click(object sender, EventArgs e)
         {
-            // TODO: open server configurator
+            var confView = new ServerConfigurator();
+            confView.ShowDialog();
         }
     }
 }

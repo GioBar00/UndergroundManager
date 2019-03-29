@@ -14,3 +14,8 @@ C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundM
 C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\UI\obj\Debug\UI.Login.resources
 C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\UI\bin\Debug\MySql.Data.dll
 C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\UI\bin\Debug\Google.Protobuf.dll
+C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\UI\obj\Debug\UI.ServerConfigurator.resources
+C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\UI\obj\Debug\UI.UndergroundEdit.resources
+C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\UI\obj\Debug\UI.MetropolitanaElement.resources
+C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\UI\obj\Debug\UI.AddUnderground.resources
+C:\Users\giovannibarbiero\Documents\Progetti Git\UndergroundManager\UndergroundManager\UI\obj\Debug\UI.MetroVisualizer.resources

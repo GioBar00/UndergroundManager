@@ -11,8 +11,10 @@ namespace ClassLibrary
         int id;
         internal string nome;
         int idMetropolitana;
+        int x;
+        int y;
 
-        internal int ID
+        public int ID
         {
             get
             {
@@ -42,10 +44,30 @@ namespace ClassLibrary
             }
         }
 
-        internal Stazione(int id, string nome, int idMetropolitana)
+        public int X
+        {
+            get
+            {
+                return x;
+            }
+        }
+
+        public int Y
+        {
+            get
+            {
+                return y;
+            }
+        }
+
+        //TODO: Fix as Internal
+        public Stazione(int id, string nome, int idMetropolitana, int x, int y)
         {
             this.id = id;
+            this.nome = nome;
             this.idMetropolitana = idMetropolitana;
+            this.x = x;
+            this.y = y;
         }
 
         internal bool AppartieneA(int idMetropolitana)

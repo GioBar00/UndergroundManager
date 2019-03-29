@@ -47,17 +47,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Commands\AddNewCollegamento.cs" />
+    <Compile Include="InterfacesAndModels\ISelectManager.cs" />
+    <Compile Include="InterfacesAndModels\SQLConnectionData.cs" />
     <Compile Include="MainClasses\Collegamento.cs" />
     <Compile Include="InterfacesAndModels\ICommand.cs" />
     <Compile Include="Managers\HistoryManager.cs" />
     <Compile Include="MainClasses\Linea.cs" />
     <Compile Include="MainClasses\Metropolitana.cs" />
     <Compile Include="InterfacesAndModels\ProgressReportModel.cs" />
+    <Compile Include="Managers\MetropolitanaInstaceManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Commands\RemoveCollegamento.cs" />
     <Compile Include="Managers\SQLServerManager.cs" />
     <Compile Include="MainClasses\Stazione.cs" />
-    <Compile Include="Managers\UndergroundManager.cs" />
     <Compile Include="UndoRedoStack.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

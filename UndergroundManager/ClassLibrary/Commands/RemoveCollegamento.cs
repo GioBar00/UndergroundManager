@@ -8,30 +8,25 @@ namespace ClassLibrary
 {
     internal class RemoveCollegamento : ICommand
     {
-        internal int idLinea;
-        internal int idStazioneA;
-        internal int idStazioneB;
+        internal Collegamento collegamento;
+        public event EventHandler<Collegamento> OnDo;
+        public event EventHandler<Collegamento> OnUndo;
 
-        internal RemoveCollegamento(int idLinea, int idStazioneA, int idStazioneB)
+        public RemoveCollegamento(Collegamento coll)
         {
-            this.idLinea = idLinea;
-            this.idStazioneA = idStazioneA;
-            this.idStazioneB = idStazioneB;
+            collegamento = coll;
         }
-        public RemoveCollegamento(Linea linea, Stazione a, Stazione b) : this(linea.ID, a.ID, b.ID)
-        { }
-        public RemoveCollegamento(Collegamento coll) : this(coll.IDLinea, coll.IDStazioneA, coll.IDStazioneB)
-        { }
 
         public void Do()
         {
             // TODO: remove collegamento from form
-            
+            OnDo(this, collegamento);
         }
 
         public void Undo()
         {
             // TODO: add collegamento to form
+            OnUndo(this, collegamento);
         }
     }
 }

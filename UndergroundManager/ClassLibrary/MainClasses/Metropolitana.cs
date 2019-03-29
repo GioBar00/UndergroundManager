@@ -10,8 +10,10 @@ namespace ClassLibrary
     {
         int id;
         internal string nome;
+        internal DateTime dateTimeCreazione;
+        internal DateTime dateTimeUltimaModifica;
 
-        internal int ID
+        public int ID
         {
             get
             {
@@ -34,10 +36,33 @@ namespace ClassLibrary
             }
         }
 
-        internal Metropolitana(int id, string nome)
+        public DateTime DateTimeCreazione
+        {
+            get
+            {
+                return new DateTime(dateTimeCreazione.Ticks);
+            }
+        }
+
+        public DateTime DateTimeUltimaModifica
+        {
+            get
+            {
+                return new DateTime(dateTimeUltimaModifica.Ticks);
+            }
+            set
+            {
+                dateTimeUltimaModifica = value;
+                // TODO: fare update data su database
+            }
+        }
+
+        internal Metropolitana(int id, string nome, DateTime creazione, DateTime ultimaModifica)
         {
             this.id = id;
             this.nome = nome;
+            dateTimeCreazione = creazione;
+            dateTimeUltimaModifica = ultimaModifica;
         }
 
         public bool Equals(Metropolitana other)
