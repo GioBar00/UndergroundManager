@@ -17,6 +17,7 @@ namespace UI
         // TODO: REMOVE THIS
         List<Stazione> testStazioni = new List<Stazione>();
         List<Linea> testLinee = new List<Linea>();
+        MetroVisualizer visual;
 
         public Metropolitana Metropolitana
         {
@@ -29,6 +30,7 @@ namespace UI
         public UndergroundEdit(Metropolitana metropolitana)
         {
             InitializeComponent();
+            
 
             testStazioni.Add(new Stazione(1, "Understasse", 1, 13, 12));
             testLinee.Add(new Linea(1, "U1", 1, 1367));
@@ -53,9 +55,10 @@ namespace UI
             ConnectionStateChanged(SQLServerManager.instance.ConnectionState);
 
             Reload();
-            var a = new MetroVisualizer(metropolitana);
-            a.Dock = DockStyle.Fill;
-            panelContainer.Controls.Add(a);
+
+            visual = new MetroVisualizer(metropolitana);
+            visual.Location = new Point(0, 0);
+            panelContainer.Controls.Add(visual);
         }
 
         public void Reload()
@@ -168,12 +171,14 @@ namespace UI
 
         private void btnZoomIn_Click(object sender, EventArgs e)
         {
-
+            
+            panelContainer.Scale(new SizeF(1.1f, 1.1f));
         }
 
         private void btnZoomOut_Click(object sender, EventArgs e)
         {
-
+            if (visual.Size.Width >= this.Size.Width && visual.Size.Height >= this.Size.Height)
+                panelContainer.Scale(new SizeF(0.9f, 0.9f));
         }
 
         private void btnZoomToFit_Click(object sender, EventArgs e)

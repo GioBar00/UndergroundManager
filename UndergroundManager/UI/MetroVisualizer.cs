@@ -16,6 +16,7 @@ namespace UI
         public MetroVisualizer(Metropolitana m)
         {
             InitializeComponent();
+            this.Size = new Size(2000, 2000);
             Reload();
         }
 

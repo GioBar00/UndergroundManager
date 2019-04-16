@@ -1,0 +1,8 @@
+Progetto Visual Studio
+Manca:
+- la creazione del grafico con stazioni e collegamenti;
+- l'aggiungi stazione;
+- l'aggiungi linea;
+- undo/redo;
+- zoom;
+- calcolo percorso;

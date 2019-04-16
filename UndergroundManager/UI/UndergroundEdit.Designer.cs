@@ -31,10 +31,17 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabelMetropolitana = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnUndo = new System.Windows.Forms.ToolStripButton();
+            this.btnRedo = new System.Windows.Forms.ToolStripButton();
+            this.toolStripLblImageDatabaseStatus = new System.Windows.Forms.ToolStripLabel();
             this.toolStripProgressBar = new System.Windows.Forms.ToolStripProgressBar();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnZoomIn = new System.Windows.Forms.ToolStripButton();
+            this.btnZoomOut = new System.Windows.Forms.ToolStripButton();
+            this.btnZoomToFit = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripComboBoxLinee = new System.Windows.Forms.ToolStripComboBox();
+            this.btnConnect = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.stazioniToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aggiungiStazioniToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,13 +50,6 @@
             this.aggiungiLineeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.elencoLineeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelContainer = new System.Windows.Forms.Panel();
-            this.btnUndo = new System.Windows.Forms.ToolStripButton();
-            this.btnRedo = new System.Windows.Forms.ToolStripButton();
-            this.toolStripLblImageDatabaseStatus = new System.Windows.Forms.ToolStripLabel();
-            this.btnZoomIn = new System.Windows.Forms.ToolStripButton();
-            this.btnZoomOut = new System.Windows.Forms.ToolStripButton();
-            this.btnZoomToFit = new System.Windows.Forms.ToolStripButton();
-            this.btnConnect = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -72,7 +72,7 @@
             this.btnConnect});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(694, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(925, 25);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -89,6 +89,37 @@
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
+            // btnUndo
+            // 
+            this.btnUndo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnUndo.Image = global::UI.Properties.Resources.undo;
+            this.btnUndo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnUndo.Name = "btnUndo";
+            this.btnUndo.Size = new System.Drawing.Size(23, 22);
+            this.btnUndo.Text = "Undo";
+            this.btnUndo.Click += new System.EventHandler(this.btnUndo_Click);
+            // 
+            // btnRedo
+            // 
+            this.btnRedo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnRedo.Image = global::UI.Properties.Resources.redo;
+            this.btnRedo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnRedo.Margin = new System.Windows.Forms.Padding(0, 1, 1, 2);
+            this.btnRedo.Name = "btnRedo";
+            this.btnRedo.Size = new System.Drawing.Size(23, 22);
+            this.btnRedo.Text = "Redo";
+            this.btnRedo.Click += new System.EventHandler(this.btnRedo_Click);
+            // 
+            // toolStripLblImageDatabaseStatus
+            // 
+            this.toolStripLblImageDatabaseStatus.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripLblImageDatabaseStatus.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripLblImageDatabaseStatus.Image = global::UI.Properties.Resources.database_disconnected;
+            this.toolStripLblImageDatabaseStatus.Margin = new System.Windows.Forms.Padding(0, 1, 10, 2);
+            this.toolStripLblImageDatabaseStatus.Name = "toolStripLblImageDatabaseStatus";
+            this.toolStripLblImageDatabaseStatus.Size = new System.Drawing.Size(16, 22);
+            this.toolStripLblImageDatabaseStatus.Text = "toolStripLabel2";
+            // 
             // toolStripProgressBar
             // 
             this.toolStripProgressBar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
@@ -101,6 +132,36 @@
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // btnZoomIn
+            // 
+            this.btnZoomIn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnZoomIn.Image = global::UI.Properties.Resources.zoomIn;
+            this.btnZoomIn.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnZoomIn.Name = "btnZoomIn";
+            this.btnZoomIn.Size = new System.Drawing.Size(23, 22);
+            this.btnZoomIn.Text = "Zoom In";
+            this.btnZoomIn.Click += new System.EventHandler(this.btnZoomIn_Click);
+            // 
+            // btnZoomOut
+            // 
+            this.btnZoomOut.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnZoomOut.Image = global::UI.Properties.Resources.zoomOut;
+            this.btnZoomOut.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnZoomOut.Name = "btnZoomOut";
+            this.btnZoomOut.Size = new System.Drawing.Size(23, 22);
+            this.btnZoomOut.Text = "Zoom Out";
+            this.btnZoomOut.Click += new System.EventHandler(this.btnZoomOut_Click);
+            // 
+            // btnZoomToFit
+            // 
+            this.btnZoomToFit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnZoomToFit.Image = global::UI.Properties.Resources.zoomToFit;
+            this.btnZoomToFit.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnZoomToFit.Name = "btnZoomToFit";
+            this.btnZoomToFit.Size = new System.Drawing.Size(23, 22);
+            this.btnZoomToFit.Text = "Zoom To Fit";
+            this.btnZoomToFit.Click += new System.EventHandler(this.btnZoomToFit_Click);
             // 
             // toolStripSeparator3
             // 
@@ -115,6 +176,16 @@
             this.toolStripComboBoxLinee.Name = "toolStripComboBoxLinee";
             this.toolStripComboBoxLinee.Size = new System.Drawing.Size(121, 25);
             // 
+            // btnConnect
+            // 
+            this.btnConnect.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnConnect.Image = global::UI.Properties.Resources.draw;
+            this.btnConnect.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnConnect.Name = "btnConnect";
+            this.btnConnect.Size = new System.Drawing.Size(23, 22);
+            this.btnConnect.Text = "Collega";
+            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
+            // 
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.White;
@@ -123,7 +194,7 @@
             this.lineeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(694, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(925, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -175,85 +246,14 @@
             this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContainer.Location = new System.Drawing.Point(0, 49);
             this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(694, 362);
+            this.panelContainer.Size = new System.Drawing.Size(925, 629);
             this.panelContainer.TabIndex = 2;
-            // 
-            // btnUndo
-            // 
-            this.btnUndo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnUndo.Image = global::UI.Properties.Resources.undo;
-            this.btnUndo.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnUndo.Name = "btnUndo";
-            this.btnUndo.Size = new System.Drawing.Size(23, 22);
-            this.btnUndo.Text = "Undo";
-            this.btnUndo.Click += new System.EventHandler(this.btnUndo_Click);
-            // 
-            // btnRedo
-            // 
-            this.btnRedo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnRedo.Image = global::UI.Properties.Resources.redo;
-            this.btnRedo.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnRedo.Margin = new System.Windows.Forms.Padding(0, 1, 1, 2);
-            this.btnRedo.Name = "btnRedo";
-            this.btnRedo.Size = new System.Drawing.Size(23, 22);
-            this.btnRedo.Text = "Redo";
-            this.btnRedo.Click += new System.EventHandler(this.btnRedo_Click);
-            // 
-            // toolStripLblImageDatabaseStatus
-            // 
-            this.toolStripLblImageDatabaseStatus.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripLblImageDatabaseStatus.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripLblImageDatabaseStatus.Image = global::UI.Properties.Resources.database_disconnected;
-            this.toolStripLblImageDatabaseStatus.Margin = new System.Windows.Forms.Padding(0, 1, 10, 2);
-            this.toolStripLblImageDatabaseStatus.Name = "toolStripLblImageDatabaseStatus";
-            this.toolStripLblImageDatabaseStatus.Size = new System.Drawing.Size(16, 22);
-            this.toolStripLblImageDatabaseStatus.Text = "toolStripLabel2";
-            // 
-            // btnZoomIn
-            // 
-            this.btnZoomIn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnZoomIn.Image = global::UI.Properties.Resources.zoomIn;
-            this.btnZoomIn.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnZoomIn.Name = "btnZoomIn";
-            this.btnZoomIn.Size = new System.Drawing.Size(23, 22);
-            this.btnZoomIn.Text = "Zoom In";
-            this.btnZoomIn.Click += new System.EventHandler(this.btnZoomIn_Click);
-            // 
-            // btnZoomOut
-            // 
-            this.btnZoomOut.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnZoomOut.Image = global::UI.Properties.Resources.zoomOut;
-            this.btnZoomOut.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnZoomOut.Name = "btnZoomOut";
-            this.btnZoomOut.Size = new System.Drawing.Size(23, 22);
-            this.btnZoomOut.Text = "Zoom Out";
-            this.btnZoomOut.Click += new System.EventHandler(this.btnZoomOut_Click);
-            // 
-            // btnZoomToFit
-            // 
-            this.btnZoomToFit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnZoomToFit.Image = global::UI.Properties.Resources.zoomToFit;
-            this.btnZoomToFit.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnZoomToFit.Name = "btnZoomToFit";
-            this.btnZoomToFit.Size = new System.Drawing.Size(23, 22);
-            this.btnZoomToFit.Text = "Zoom To Fit";
-            this.btnZoomToFit.Click += new System.EventHandler(this.btnZoomToFit_Click);
-            // 
-            // btnConnect
-            // 
-            this.btnConnect.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnConnect.Image = global::UI.Properties.Resources.draw;
-            this.btnConnect.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnConnect.Name = "btnConnect";
-            this.btnConnect.Size = new System.Drawing.Size(23, 22);
-            this.btnConnect.Text = "Collega";
-            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
             // 
             // UndergroundEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(694, 411);
+            this.ClientSize = new System.Drawing.Size(925, 678);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
